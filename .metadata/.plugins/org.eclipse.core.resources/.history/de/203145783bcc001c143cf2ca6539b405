@@ -1,0 +1,10 @@
+package com.chainsys.jdbc;
+
+import java.sql.*;
+
+public class InsertPrepared {
+
+	public static void main(String args[]) {
+
+	}
+}

@@ -1,0 +1,21 @@
+1648450683515	Delete element
+1648615706595	Delete element
+1648616450835	Delete element
+1648630296377	Move compilation unit
+1648639370037	Delete element
+1648706884041	Delete element
+1648717969542	Encapsulate field 'id'
+1648717973032	Encapsulate field 'name'
+1648724901491	Encapsulate field 'phoneNo'
+1648724905713	Encapsulate field 'frontCameraPixel'
+1648724909193	Encapsulate field 'rearCameraPixel'
+1648724913265	Encapsulate field 'cost'
+1648724917094	Encapsulate field 'model'
+1648724920812	Encapsulate field 'manufacturer'
+1648724925271	Encapsulate field 'memory'
+1648724928787	Encapsulate field 'dateofPurchase'
+1648724932887	Encapsulate field 'planDetails'
+1648725437988	Encapsulate field 'currentScore'
+1648725442227	Encapsulate field 'runRate'
+1648725453033	Encapsulate field 'completed_overs'
+1648728575727	Delete element
