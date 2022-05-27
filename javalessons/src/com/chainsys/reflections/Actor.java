@@ -3,7 +3,7 @@ package com.chainsys.reflections;
 public class Actor
 {
 	public  String Name;
-	private String City;
+	String City;
 	protected  long pincode;
 	
 	public Actor()

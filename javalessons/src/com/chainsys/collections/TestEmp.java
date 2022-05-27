@@ -4,8 +4,8 @@ public class TestEmp {
 
 	public static void main(String[] args) {
 		
-		Emp firstEmp = new Emp(111);
-		Emp secondEmp = new Emp(411);
+		Emp firstEmp = new Emp(111, null);
+		Emp secondEmp = new Emp(411, null);
 		
 		System.out.println(firstEmp.hashCode());
 		System.out.println(secondEmp.hashCode());

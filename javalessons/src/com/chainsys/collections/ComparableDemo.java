@@ -8,23 +8,7 @@ public class ComparableDemo {
 	{
 		sortComparableEmp();
 	}
-	public static void compareEmp()
-	{
-		Emp e1= new Emp(100);
-		e1.Name="Sam";
-		Emp e2=new Emp(200);
-		e2.Name="Musk";
-		Emp e3=new Emp(300);
-		e3.Name="Jobs";
-		List<Emp>empList=new ArrayList<>();
-		empList.add(e2);
-		empList.add(e3);
-		empList.add(e1);
-		System.out.println(empList);
-//		Collections.sort(empList);
-		System.out.println(empList);
-		
-	}
+
 	public static void sortComparableEmp()
 	{
 		EmpComparable e1= new EmpComparable(100);

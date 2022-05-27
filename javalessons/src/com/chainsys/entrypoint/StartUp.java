@@ -8,6 +8,7 @@ import com.chainsys.dateLessons.WorkingWithDate;
 import com.chainsys.exceptions.Calculator;
 import com.chainsys.exceptions.DemoB;
 import com.chainsys.exceptions.DemoTrace;
+import com.chainsys.miniproject.commonutil.InvalidInputDataException;
 import com.chainsys.strings.StringBuilderDemo;
 import com.chainsys.strings.StringLessonA;
 import com.chainsys.unit.test.CalculatorTester;
@@ -33,6 +34,7 @@ public class StartUp {
 	 * @return void
 	 */
 	public static void main(String[] args) {
+		checkjob("IT_PRG");
 		
 	//	String firstObject="Hello";
 		/**
@@ -54,7 +56,7 @@ public class StartUp {
 //		System.out.println(emp.toString());
 //		System.out.println(emp.getClass().getName());
 		
-		float nums[]= {10.1f,23.4f,45.6f,23.7f,34.3f};
+//		float nums[]= {10.1f,23.4f,45.6f,23.7f,34.3f};
 		//ArraySolutions.findSumandAverageofaFloatArray(nums);
 		
 		//VariableTester.testGlobalVariables();
@@ -114,5 +116,25 @@ public class StartUp {
 		
 	//	DemoTrace.m1();
 	}
-
+	public static boolean checkjob(String data) throws InvalidInputDataException {
+		boolean result = false;
+		int len = data.length();
+		for (int index = 0; index < len; index++) {
+			data.toUpperCase();
+			int asc = (int) data.charAt(index);
+			if ((asc <65 ) || (asc >90))  {
+				if(asc==95)
+					result = true;
+				else
+				 throw new InvalidInputDataException("Enter Alphabets(A-Z) and underscore(_) only");
+			} 
+//			else if(asc > 96 && asc <123)
+//			{
+//					result = true;	
+//			}
+			else
+				result = true;
+		}
+		return result;
+	}
 }

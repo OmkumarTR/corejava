@@ -1,0 +1,32 @@
+create new project in eclipse 
+name - miniproject
+package com.chainsys.miniproject.entry
+class - Startup.java
+
+com.chainsys.miniproject.ui
+com.chainsys.miniproject.businesslogic
+com.chainsys.miniproject.pojo
+com.chainsys.miniproject.dao
+com.chainsys.miniproject.commonutils
+com.chainsys.miniproject.test
+------------------------------------
+class
+-----
+in ui package > EmployeeUi -> Scanner and sysout only should bo in this class
+in bl package >EmployeeController ->
+in pojo package >Employee  -- plain Old Java Object.
+objects of this class is used to transfer data between UI <-> Controller <-> Dao
+in dao package >EmployeeDao -D - JDBD code should be written only
+ in this
+in commonutils package > LogManager
+in test package -> TestEmployeeDao
+
+---------------------------------------
+tables
+------
+1. Doctor -> id,name,dob,speciality,city,phone_no,standard_fees
+2. Appointments -> app_id,app_date,doc_id,patientname,fees_collected(free,standard,extra,low)
+--create tables in oracle-db and implement java code for them.
+Also implement EmployeeUi
+doctorUi,Dao,Pojo,test
+AppointmentUi,Dao,Pojo,test.
